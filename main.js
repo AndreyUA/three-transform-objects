@@ -23,6 +23,10 @@ console.log(
 
 scene.add(mesh);
 
+// Axes helper
+const axesHelper = new THREE.AxesHelper(3);
+scene.add(axesHelper);
+
 const size = {
   width: 800,
   height: 600,
