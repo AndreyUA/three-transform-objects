@@ -8,11 +8,13 @@ const material = new THREE.MeshMatcapMaterial({ color: 0xff0000 });
 const mesh = new THREE.Mesh(geometry, material);
 
 // Change position just for fun
-mesh.position.x = 0.7;
-mesh.position.y = -0.6;
-mesh.position.z = -3;
+// mesh.position.x = 0.7;
+// mesh.position.y = -0.6;
+// mesh.position.z = 1;
 
 // mesh.position.normalize() --> this will normalize position to vector length 1
+
+mesh.position.set(0.7, -0.6, 1);
 
 console.log(
   "vector3 length (between the center of scene and position): ",
