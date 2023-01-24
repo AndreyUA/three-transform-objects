@@ -45,6 +45,8 @@ const camera = new THREE.PerspectiveCamera(75, size.width / size.height);
 camera.position.z = 3;
 scene.add(camera);
 
+camera.lookAt(mesh.position);
+
 console.log(
   "distance between cube and camera: ",
   mesh.position.distanceTo(camera.position)
